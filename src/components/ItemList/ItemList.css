@@ -1,0 +1,16 @@
+.item-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Cada tarjeta envuelta por un Link debe comportarse como un bloque centrado */
+.item-list-container a {
+  display: block;          
+  text-decoration: none;
+  width: fit-content;
+  margin: 0 auto;          /* centra cada tarjeta */
+}
+

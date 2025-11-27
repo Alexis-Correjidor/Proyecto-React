@@ -1,0 +1,59 @@
+/* === TARJETA === */
+.product-item {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  color: white;
+
+  text-align: center; /* CENTRAMOS TODO */
+  width: 100%;
+  max-width: 320px;
+  height: 430px; /* altura uniforme */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+}
+
+/* === IMAGEN === */
+.product-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* === TITULO === */
+.product-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.6rem 0;
+  color: #facc15; /* amarillo */
+  text-align: center; /* ✔ se centra */
+  width: 100%;
+}
+
+/* === TEXTOS === */
+.product-item p {
+  margin: 0.175rem 0;
+}
+
+/* === CHILDREN/BOTONES === */
+.product-item > *:last-child {
+  margin-top: auto;
+}
+
+.product-item h2,
+.product-item .product-title {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
